@@ -7,10 +7,10 @@
 
 ## Usage
 
-First, install `coffeelint-use-strict` as a development dependency:
+First, install `coffeelint-use-strict` globally:
 
 ```shell
-npm install --save-dev coffeelint-use-strict
+npm install -g coffeelint-use-strict
 ```
 
 Then, add a `"use_strict"` key with value `{"module": "coffeelint-use-strict"}` to your `coffeelint.json`, e.g.
