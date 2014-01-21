@@ -1,0 +1,53 @@
+{
+  "name": "coffeelint-use-strict",
+  "version": "0.0.1",
+  "description": "A CoffeeLint rule that enforces usage of strict mode",
+  "keywords": [
+    "coffee",
+    "coffeescript",
+    "coffeelint",
+    "rule",
+    "usestrict",
+    "use strict",
+    "'use strict'",
+    "\"use strict\"",
+    "coffeelintrule",
+    "coffeelintmodule",
+    "coffeelint-rule",
+    "coffeelint-module",
+    "codeconventions"
+  ],
+  "repository": "janraasch/coffeelint-use-strict",
+  "author": {
+    "name": "Jan Raasch",
+    "email": "jan@janraasch.com",
+    "url": "http://janraasch.com"
+  },
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "prepublish": "gulp coffee --require coffee-script",
+    "test": "coffeelint gulpfile.coffee index.coffee test -f ./coffeelint.json && istanbul test _mocha --report lcovonly -- ./test/*.coffee --require coffee-script --reporter spec",
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
+    "screenshot": "coffeelint index.coffee"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "coffeelint": "~1.0.2",
+    "mocha": "~1.17.0",
+    "gulp-util": "~2.2.12",
+    "istanbul": "~0.2.3",
+    "should": "~3.0.1",
+    "coveralls": "~2.6.1",
+    "gulp": "~3.4.0",
+    "gulp-coffee": "~1.2.2",
+    "gulp-clean": "~0.2.2",
+    "gulp-coffeelint": "~0.1.2",
+    "conventional-changelog": "0.0.4"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "license": "MIT"
+}
