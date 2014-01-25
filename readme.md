@@ -48,9 +48,14 @@ Default: `false`
 
 Require the `'use strict'` statement to be at the top of a file.
 
+## Contributing
+In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [gulp][gulp] and [npm-test](https://npmjs.org/doc/test.html). Plus, make sure to adhere to these [commit message conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.uyo6cb12dt6w).
+
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Jan Raasch](http://janraasch.com)
+
+[gulp]: http://gulpjs.com/
 
 [coffeelint]: http://www.coffeelint.org
 [coffeelint-api-doc]: http://www.coffeelint.org/#api

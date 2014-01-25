@@ -25,10 +25,10 @@ gulp.task 'test', ['coffee'], ->
 gulp.task 'changelog', ->
     changelog = require 'conventional-changelog'
     changelog({
-        repository: 'https://github.com/janraasch/generator-gulpplugin-coffee'
+        repository: 'https://github.com/janraasch/coffeelint-use-strict'
         version: require('./package.json').version
     }, (err, log) ->
-        fs.writeFileSync 'CHANGELOG.md', log
+        fs.writeFileSync 'changelog.md', log
     )
 
 # test drive
