@@ -35,7 +35,7 @@ gulp.task 'changelog', ->
 gulp.task 'selfie', ->
     usestrict = require './index.coffee'
     gulp.src('./{,test/,test/fixtures/}*.coffee')
-        .pipe(coffeelint null, false, [usestrict])
+        .pipe(coffeelint [usestrict])
         .pipe(coffeelint.reporter())
 
 # start workflow
