@@ -35,16 +35,16 @@
   "devDependencies": {
     "coffee-script": "^1.9.1",
     "coffeelint": "^1.8.1",
-    "mocha": "^2.1.0",
-    "gulp-util": "^3.0.3",
-    "istanbul": "^0.3.6",
-    "should": "^5.0.0",
+    "conventional-changelog": "0.0.11",
     "coveralls": "^2.11.2",
+    "del": "^1.1.1",
     "gulp": "^3.8.11",
     "gulp-coffee": "^2.3.1",
-    "gulp-clean": "^0.3.1",
     "gulp-coffeelint": "^0.4.0",
-    "conventional-changelog": "0.0.11"
+    "gulp-util": "^3.0.3",
+    "istanbul": "^0.3.6",
+    "mocha": "^2.1.0",
+    "should": "^5.0.0"
   },
   "engines": {
     "node": ">=0.8.0"
