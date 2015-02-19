@@ -62,16 +62,16 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 [moz-strictmode-doc]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions_and_function_scope/Strict_mode?redirectlocale=en-US&redirectslug=JavaScript%2FReference%2FFunctions_and_function_scope%2FStrict_mode
 
 [npm-url]: https://npmjs.org/package/coffeelint-use-strict
-[npm-image]: https://badge.fury.io/js/coffeelint-use-strict.png
+[npm-image]: http://img.shields.io/npm/v/coffeelint-use-strict.svg
 
 [travis-url]: http://travis-ci.org/janraasch/coffeelint-use-strict
-[travis-image]: https://secure.travis-ci.org/janraasch/coffeelint-use-strict.png?branch=master
+[travis-image]: https://secure.travis-ci.org/janraasch/coffeelint-use-strict.svg?branch=master
 
 [coveralls-url]: https://coveralls.io/r/janraasch/coffeelint-use-strict
-[coveralls-image]: https://coveralls.io/repos/janraasch/coffeelint-use-strict/badge.png
+[coveralls-image]: https://coveralls.io/repos/janraasch/coffeelint-use-strict/badge.svg
 
 [depstat-url]: https://david-dm.org/janraasch/coffeelint-use-strict
-[depstat-image]: https://david-dm.org/janraasch/coffeelint-use-strict.png
+[depstat-image]: https://david-dm.org/janraasch/coffeelint-use-strict.svg
 
 [devdepstat-url]: https://david-dm.org/janraasch/coffeelint-use-strict#info=devDependencies
-[devdepstat-image]: https://david-dm.org/janraasch/coffeelint-use-strict/dev-status.png
+[devdepstat-image]: https://david-dm.org/janraasch/coffeelint-use-strict/dev-status.svg
