@@ -1,8 +1,12 @@
 language: node_js
 node_js:
-    - '0.10'
-    - '0.11'
+- '0.8'
+- '0.10'
+- '0.12'
+- 'iojs'
 before_script:
-    - npm config set coverage true
+- npm config set coverage true
 after_success:
-    - npm run-script coveralls
+- npm run-script coveralls
+before_install:
+- npm update -g npm
