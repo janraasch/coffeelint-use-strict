@@ -9,7 +9,7 @@ before_script:
 after_success:
 - npm run-script coveralls
 before_install:
-- npm update -g npm
+- npm install -g npm
 deploy:
   provider: npm
   email: jan@janraasch.com
