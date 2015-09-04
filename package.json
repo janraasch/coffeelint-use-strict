@@ -1,6 +1,6 @@
 {
   "name": "coffeelint-use-strict",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A CoffeeLint rule that enforces usage of strict mode",
   "keywords": [
     "coffee",
