@@ -51,6 +51,9 @@ Require the `'use strict'` statement to be at the top of a file.
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [gulp][gulp] and [npm-test](https://npmjs.org/doc/test.html). Plus, make sure to adhere to these [commit message conventions](https://docs.google.com/document/d/1QrDFcIiPjSLDn3EL15IJygNPiHORgU1_OOAqWjiDU5Y/edit#heading=h.uyo6cb12dt6w).
 
+## Development
+If you wanna use `gulp` and the tasks in `gulpfile.coffee`, please run `npm i gulp` manually. `gulp` is not included as a devDependency, since it cannot be installed on `node v0.8` and we want to be able to install and test this package on TravisCI on `node v0.8`.
+
 ## License
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License) © [Jan Raasch](http://janraasch.com)

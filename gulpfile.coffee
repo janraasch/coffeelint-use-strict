@@ -1,5 +1,5 @@
 fs = require 'fs'
-{spawn} = require 'child_process'
+{spawn, exec} = require 'child_process'
 gulp = require 'gulp'
 coffee = require 'gulp-coffee'
 coffeelint = require 'gulp-coffeelint'
@@ -7,10 +7,10 @@ del = require 'del'
 {log,colors} = require 'gulp-util'
 
 # compile `index.coffee`
-gulp.task 'coffee', ->
-    gulp.src('index.coffee')
-        .pipe(coffee bare: true)
-        .pipe(gulp.dest './')
+gulp.task 'coffee', (cb) ->
+    cmd = exec 'npm run coffee', (err) ->
+        return cb(err) if err
+        cb()
 
 # remove `index.js` and `coverage` dir
 gulp.task 'clean', ->
