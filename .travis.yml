@@ -10,3 +10,13 @@ after_success:
 - npm run-script coveralls
 before_install:
 - npm update -g npm
+deploy:
+  provider: npm
+  email: jan@janraasch.com
+  api_key:
+    secure: scSbYJSEAIP1VXGyUx/cJ+0gVlkM1fcB65rK2NKn2OcvjHUFaRChfvV9ArviQ2a3VM/5Q65pWq5TcPPNhHpmbxSKOhNDjxQeU1zAfUxwLu8w8wxjdg5uxWGetB2Vcjz0ixZ46Q4SvfRyk/GmqKWYyx7B2ZGq47bWwG+y2/h3T3A=
+  on:
+    tags: true
+    repo: janraasch/coffeelint-use-strict
+    node: '0.12'
+    branch: master
