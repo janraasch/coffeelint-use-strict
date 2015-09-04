@@ -20,16 +20,6 @@ gulp.task 'clean', ->
 gulp.task 'test', ['coffee'], ->
     spawn 'npm', ['test'], stdio: 'inherit'
 
-# create changelog
-gulp.task 'changelog', ->
-    changelog = require 'conventional-changelog'
-    changelog({
-        repository: 'https://github.com/janraasch/coffeelint-use-strict'
-        version: require('./package.json').version
-    }, (err, log) ->
-        fs.writeFileSync 'changelog.md', log
-    )
-
 # test drive
 gulp.task 'selfie', ->
     usestrict = require './index.coffee'

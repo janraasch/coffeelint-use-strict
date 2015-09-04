@@ -30,7 +30,8 @@
     "prepublish": "gulp coffee --require coffee-script/register",
     "test": "coffeelint gulpfile.coffee index.coffee test -f ./coffeelint.json && istanbul test _mocha --report lcovonly -- ./test/*.coffee --require coffee-script/register --reporter spec",
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
-    "screenshot": "coffeelint index.coffee"
+    "screenshot": "coffeelint index.coffee",
+    "changelog": "conventional-changelog -p angular -i changelog.md -w"
   },
   "devDependencies": {
     "coffee-script": "^1.9.1",
