@@ -10,7 +10,7 @@ before_script:
 after_success:
 - npm run-script coveralls
 before_install:
-- npm install -g npm
+- if [[ $TRAVIS_NODE_VERSION == "0.8" ]]; then npm install npm@2 -g; else npm install npm -g; fi
 deploy:
   provider: npm
   email: jan@janraasch.com
